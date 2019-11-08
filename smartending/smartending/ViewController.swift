@@ -23,14 +23,17 @@ class ViewController: UIViewController {
         title = "Drinks!"
         view.backgroundColor = .white
         
-        let martini = Drink(name: "Martini", tools: ["Shaker", "Strainer", "Glass"], ingredients: ["2.5oz gin", "0.5oz dry vermouth"], garnish: "Olive or Twist", glass: "Martini Glass", instructions: "Shake, stir, strain into glass", picName: "martini")
-        drinkList = [martini]
+        let martini = Drink(name: "Martini", tools: ["Shaker", "Strainer"], ingredients: ["2.5oz gin", "0.5oz dry vermouth"], garnish: "Olive or Twist", glass: "Martini Glass", instructions: "Shake, stir, strain into glass", picName: "martini")
+        let tomCollins = Drink(name: "Tom Collins", tools: ["Shaker", "Strainer"], ingredients: ["1.5oz gin", "1.0oz sours", "club soda"], garnish: "Lime", glass: "Highball Glass", instructions: "Shake, strain into highball glass. Fill with club soda.", picName: "tomCollins")
+        let negroni = Drink(name: "Negroni", tools: ["Shaker", "Strainer"], ingredients: ["1.0oz gin", "1.0oz sweet vermouth", "1.0oz Campari"], garnish: "Orange", glass: "Rocks Glass", instructions: "Shake, strain into rocks glass", picName: "negroni")
+        let gimlet = Drink(name: "Gimlet", tools: ["Shaker", "Strainer"], ingredients: ["2.0oz gin","1.5oz lime juice", "0.5oz simple syrup"], garnish: "Lime", glass: "Martini Glass", instructions: "Shake, strain into martini glass", picName: "gimlet")
+        drinkList = [martini, tomCollins, negroni, gimlet]
         
         //set up drink layout for menu collection view
         let drinkLayout = UICollectionViewFlowLayout()
-        drinkLayout.scrollDirection = .horizontal
-        drinkLayout.minimumLineSpacing = padding+10
-        drinkLayout.minimumInteritemSpacing = padding+10
+        drinkLayout.scrollDirection = .vertical
+        drinkLayout.minimumLineSpacing = padding
+        drinkLayout.minimumInteritemSpacing = padding
         
         //set up restaurant collection view
         drinkCollectionView = UICollectionView(frame: .zero, collectionViewLayout: drinkLayout)
@@ -39,7 +42,6 @@ class ViewController: UIViewController {
         drinkCollectionView.register(DrinkCollectionViewCell.self, forCellWithReuseIdentifier: drinkCellReuseIdentifier)
         drinkCollectionView.dataSource = self
         drinkCollectionView.delegate = self
-        
         view.addSubview(drinkCollectionView)
         
         setupConstraints()
