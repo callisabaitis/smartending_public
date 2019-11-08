@@ -11,6 +11,8 @@
 		6F6FC1F12375F3A700A6C99A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6FC1F02375F3A700A6C99A /* ViewController.swift */; };
 		6F6FC1F62375F3AC00A6C99A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F6FC1F52375F3AC00A6C99A /* Assets.xcassets */; };
 		6F6FC1F92375F3AC00A6C99A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6FC1F72375F3AC00A6C99A /* LaunchScreen.storyboard */; };
+		6F6FC2012375F53300A6C99A /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6FC2002375F53300A6C99A /* Drink.swift */; };
+		6F6FC2032375FB3500A6C99A /* DrinkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6FC2022375FB3500A6C99A /* DrinkCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		6F6FC1F52375F3AC00A6C99A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F6FC1F82375F3AC00A6C99A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F6FC1FA2375F3AC00A6C99A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F6FC2002375F53300A6C99A /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		6F6FC2022375FB3500A6C99A /* DrinkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				6F6FC1EC2375F3A700A6C99A /* AppDelegate.swift */,
 				6F6FC1F02375F3A700A6C99A /* ViewController.swift */,
+				6F6FC2022375FB3500A6C99A /* DrinkCollectionViewCell.swift */,
+				6F6FC2002375F53300A6C99A /* Drink.swift */,
 				6F6FC1F52375F3AC00A6C99A /* Assets.xcassets */,
 				6F6FC1F72375F3AC00A6C99A /* LaunchScreen.storyboard */,
 				6F6FC1FA2375F3AC00A6C99A /* Info.plist */,
@@ -132,7 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F6FC1F12375F3A700A6C99A /* ViewController.swift in Sources */,
+				6F6FC2012375F53300A6C99A /* Drink.swift in Sources */,
 				6F6FC1ED2375F3A700A6C99A /* AppDelegate.swift in Sources */,
+				6F6FC2032375FB3500A6C99A /* DrinkCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
