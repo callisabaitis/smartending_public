@@ -77,3 +77,13 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: size, height: size)
     }
 }
+
+extension ViewController: UICollectionViewDelegate {
+func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    //let selection = drinkCollectionView.dequeueReusableCell(withReuseIdentifier: drinkCellReuseIdentifier, for: indexPath) as! DrinkCollectionViewCell
+    let drink = drinkList[indexPath.row]
+    let viewController = IndDrinkViewController(drink: drink)
+    //viewController.delegate = self
+    present(viewController, animated: true, completion: nil)
+    }
+}
