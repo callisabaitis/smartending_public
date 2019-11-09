@@ -11,6 +11,7 @@ import UIKit
 class IndDrinkViewController: UIViewController {
     
     var nameLabel: UILabel!
+    var nameText: String
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -22,6 +23,8 @@ class IndDrinkViewController: UIViewController {
         
         //name label
         nameLabel = UILabel()
+        nameLabel.textColor = .black
+        nameLabel.text = nameText
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(nameLabel)
         
@@ -29,10 +32,10 @@ class IndDrinkViewController: UIViewController {
     }
     
     init(drink: Drink){
-        if let name = drink.name {
-            nameLabel = UILabel()
-            nameLabel.text = name
-        }
+        //if let name = drink.name {
+            //nameLabel = UILabel()
+        nameText = drink.name
+       // }
         super.init(nibName: nil, bundle: nil)
     }
     
