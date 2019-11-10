@@ -32,7 +32,7 @@ class Drink {
         var a = ""
         for i in 0..<self.ingredients.count {
             if i != self.ingredients.count {
-                a +=  String(i)+", "
+                a +=  String(ingredients[i])+", "
             }
         }
         return a
@@ -41,7 +41,7 @@ class Drink {
         var a = ""
         for i in 0..<self.tools.count {
             if i != self.tools.count {
-                a +=  String(i)+", "
+                a +=  String(tools[i])+", "
             }
         }
         return a
