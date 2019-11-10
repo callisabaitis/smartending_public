@@ -40,8 +40,11 @@ class Drink {
     func getToolsList() -> String {
         var a = ""
         for i in 0..<self.tools.count {
-            if i != self.tools.count {
+            if i != (self.tools.count-1) {
                 a +=  String(tools[i])+", "
+            }
+            else {
+                a += String(tools[i])
             }
         }
         return a
